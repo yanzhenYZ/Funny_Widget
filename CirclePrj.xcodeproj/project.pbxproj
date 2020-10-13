@@ -456,11 +456,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/library/YZDevice/framework$(EFFECTIVE_PLATFORM_NAME)";
 				INFOPLIST_FILE = Today/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					YZIPhoneDevice,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.CirclePrj.Today;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -476,11 +481,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/library/YZDevice/framework$(EFFECTIVE_PLATFORM_NAME)";
 				INFOPLIST_FILE = Today/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					YZIPhoneDevice,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.CirclePrj.Today;
 				PRODUCT_NAME = "$(TARGET_NAME)";

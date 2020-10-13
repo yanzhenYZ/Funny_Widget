@@ -7,6 +7,7 @@
 
 import SwiftUI
 import WidgetKit
+import YZIPhoneDevice
 
 struct TodayView: View {
     @State private var cpuProgress: CGFloat = 0.2
