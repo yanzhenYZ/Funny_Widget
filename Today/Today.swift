@@ -55,7 +55,7 @@ struct Today: Widget {
             TodayView()
         }
         .configurationDisplayName("Funny")
-        .description("Funny 1234")
+        .description("看到你也得不到")
         .supportedFamilies([.systemMedium])
     }
 }

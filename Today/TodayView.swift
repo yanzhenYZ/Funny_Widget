@@ -9,17 +9,20 @@ import SwiftUI
 import WidgetKit
 
 struct TodayView: View {
-    @State private var progress: CGFloat = 0.2
-    @State private var subTitle = "20%"
+    @State private var cpuProgress: CGFloat = 0.2
+    @State private var cpuSubTitle = "20%"
+    @State private var memoryProgress: CGFloat = 0
+    @State private var memorySubTitle = "0G/0G"
+    @State private var wifiSubTitle = "0B/s"
     
     var body: some View {
         HStack {
             Spacer()
-            YZCircleView(title: "CPU", subTitle: $subTitle, progress: $progress)
+            YZCircleView(title: "CPU", subTitle: $cpuSubTitle, progress: $cpuProgress)
             Spacer()
-            YZCircleView(title: "neicun", subTitle: $subTitle, progress: $progress)
+            YZCircleView(title: "内存", subTitle: $memorySubTitle, progress: $memoryProgress)
             Spacer()
-            YZCircleView(title: "Wift", subTitle: $subTitle, progress: $progress)
+            YZCircleView(title: "Wift", subTitle: $wifiSubTitle, progress: .constant(0))
             Spacer()
         }
         

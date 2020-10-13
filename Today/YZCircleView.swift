@@ -10,7 +10,7 @@ import WidgetKit
 
 //Circle()
 //.stroke(Color.gray, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round, miterLimit: .infinity, dash: [20,0], dashPhase: 0))
-private let CWIDTH: CGFloat = 80
+private let CWIDTH: CGFloat = 85
 struct YZCircleView: View {
     var title: String
     @Binding var subTitle: String
@@ -30,12 +30,12 @@ struct YZCircleView: View {
             VStack {
                 Text(title)
                     .font(.system(size: 14))
-                    .foregroundColor(Color.blue)
-                    .frame(height: 20.0)
+//                    .foregroundColor(Color.blue)
+                    .frame(height: 25.0)
                 
                 Text(subTitle)
                     .font(.system(size: 13))
-                    .frame(height: 20.0)
+                    .frame(height: 25.0)
             }
         }
     }
