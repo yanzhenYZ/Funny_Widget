@@ -10,7 +10,7 @@ import WidgetKit
 
 //Circle()
 //.stroke(Color.gray, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round, miterLimit: .infinity, dash: [20,0], dashPhase: 0))
-private let CWIDTH: CGFloat = 90
+private let CWIDTH: CGFloat = 80
 struct YZCircleView: View {
     var title: String
     @Binding var subTitle: String

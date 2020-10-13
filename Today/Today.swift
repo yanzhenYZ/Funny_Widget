@@ -40,14 +40,6 @@ struct SimpleEntry: TimelineEntry {
     let configuration: ConfigurationIntent
 }
 
-//struct TodayEntryView : View {
-//    var entry: Provider.Entry
-//
-//    var body: some View {
-//        Text(entry.date, style: .time)
-//    }
-//}
-
 struct TodayEntryView : View {
     var body: some View {
         Text("Hello")
@@ -72,7 +64,5 @@ struct Today_Previews: PreviewProvider {
     static var previews: some View {
         TodayEntryView()
             .previewContext(WidgetPreviewContext(family: .systemMedium))
-//        TodayEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
-//            .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
