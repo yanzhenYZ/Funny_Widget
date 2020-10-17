@@ -7,14 +7,12 @@
 
 import WidgetKit
 import SwiftUI
-import Intents
 
 struct Provider: TimelineProvider {
-    // 占位视图，是一个标准的 SwiftUI View
+    //启动
     func placeholder(in context: Context) -> TodayEntry {
         return TodayEntry(date: Date())
     }
-
     // 添加小组件时显示的内容
     func getSnapshot(in context: Context, completion: @escaping (TodayEntry) -> Void) {
         // 取数据
@@ -24,21 +22,26 @@ struct Provider: TimelineProvider {
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<TodayEntry>) -> Void) {
         let entry = TodayEntry(date: Date())
-        // policy决定了什么时候刷新数据
         let timeline = Timeline(entries: [entry], policy: .atEnd)
-        completion(timeline)
+        completion(timeline)//数据传输--001
+    }
+}
+
+struct PlaceholderView : View {
+    var body: some View {
+        Text("Loading...")
     }
 }
 
 struct TodayEntry: TimelineEntry {
     let date: Date
-    
+    let manager = TodayManager.manager
 }
 
 struct TodayEntryView : View {
     let entry: TodayEntry
     var body: some View {
-        Text(entry.date.timeIntervalSince1970.description)
+        TodayView()
     }
 }
 
@@ -46,7 +49,7 @@ struct TodayEntryView : View {
 struct Today: Widget {
     let kind: String = "Today"
 
-    var body: some WidgetConfiguration {
+    var body: some WidgetConfiguration {//数据接收--001
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             TodayEntryView(entry: entry)
         }

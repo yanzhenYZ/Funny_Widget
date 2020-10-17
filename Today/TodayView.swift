@@ -7,23 +7,19 @@
 
 import SwiftUI
 import WidgetKit
-import YZIPhoneDevice
 
 struct TodayView: View {
     @State private var cpuProgress: CGFloat = 0.2
-    @State private var cpuSubTitle = "20%"
     @State private var memoryProgress: CGFloat = 0
-    @State private var memorySubTitle = "0G/0G"
-    @State private var wifiSubTitle = "0B/s"
-    
+
     var body: some View {
         HStack {
             Spacer()
-            YZCircleView(title: "CPU", subTitle: $cpuSubTitle, progress: $cpuProgress)
+            YZCircleView(title: "CPU", subTitle: TodayManager.manager.sub.description, progress: $cpuProgress)
             Spacer()
-            YZCircleView(title: "内存", subTitle: $memorySubTitle, progress: $memoryProgress)
+            YZCircleView(title: "内存", subTitle: TodayManager.manager.sub.description, progress: $memoryProgress)
             Spacer()
-            YZCircleView(title: "Wift", subTitle: $wifiSubTitle, progress: .constant(0))
+            YZCircleView(title: "Wift", subTitle: TodayManager.manager.sub.description, progress: .constant(0))
             Spacer()
         }
         

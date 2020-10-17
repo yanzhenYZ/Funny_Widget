@@ -13,7 +13,7 @@ import WidgetKit
 private let CWIDTH: CGFloat = 85
 struct YZCircleView: View {
     var title: String
-    @Binding var subTitle: String
+    var subTitle: String
     @Binding var progress: CGFloat
     var body: some View {
         ZStack {
@@ -43,7 +43,7 @@ struct YZCircleView: View {
 
 struct YZCircleView_Previews: PreviewProvider {
     static var previews: some View {
-        YZCircleView(title: "CPU", subTitle: .constant("20%"), progress: .constant(0.2))
+        YZCircleView(title: "CPU", subTitle: "20%", progress: .constant(0.2))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
 
     }
