@@ -15,11 +15,11 @@ struct TodayView: View {
     var body: some View {
         HStack {
             Spacer()
-            YZCircleView(title: "CPU", subTitle: TodayManager.manager.sub.description, progress: $cpuProgress)
+            YZCircleView(title: "CPU", subTitle: TodayManager.manager.cpuUsageStr, progress: TodayManager.manager.cpuUsage)
             Spacer()
-            YZCircleView(title: "内存", subTitle: TodayManager.manager.sub.description, progress: $memoryProgress)
+            YZCircleView(title: "内存", subTitle: TodayManager.manager.memoryUsageStr, progress: TodayManager.manager.memoryUsage)
             Spacer()
-            YZCircleView(title: "Wift", subTitle: TodayManager.manager.sub.description, progress: .constant(0))
+            YZCircleView(title: TodayManager.manager.wifiTitle, subTitle: TodayManager.manager.wifiSubTitle, progress: 0)
             Spacer()
         }
         
