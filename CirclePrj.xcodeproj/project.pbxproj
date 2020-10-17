@@ -22,6 +22,7 @@
 		9B1D40652535B23F0067C123 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B1D40542535B23C0067C123 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9B1D406F2535B4890067C123 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1D406E2535B4890067C123 /* TodayView.swift */; };
 		9B1D40732535B51D0067C123 /* YZCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1D40722535B51D0067C123 /* YZCircleView.swift */; };
+		9B40918F253AEC5C0098DD30 /* TodayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B409189253AEBBD0098DD30 /* TodayManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		9B1D40602535B23F0067C123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B1D406E2535B4890067C123 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		9B1D40722535B51D0067C123 /* YZCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZCircleView.swift; sourceTree = "<group>"; };
+		9B409189253AEBBD0098DD30 /* TodayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				9B1D405B2535B23C0067C123 /* Today.swift */,
+				9B409189253AEBBD0098DD30 /* TodayManager.swift */,
 				9B1D406E2535B4890067C123 /* TodayView.swift */,
 				9B1D40722535B51D0067C123 /* YZCircleView.swift */,
 				9B1D405D2535B23C0067C123 /* Today.intentdefinition */,
@@ -266,6 +269,7 @@
 				9B1D40612535B23F0067C123 /* Today.intentdefinition in Sources */,
 				9B1D40732535B51D0067C123 /* YZCircleView.swift in Sources */,
 				9B1D406F2535B4890067C123 /* TodayView.swift in Sources */,
+				9B40918F253AEC5C0098DD30 /* TodayManager.swift in Sources */,
 				9B1D405C2535B23C0067C123 /* Today.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
